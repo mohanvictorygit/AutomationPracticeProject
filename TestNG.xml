@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+  <test name="Test Basics">    
+     <classes>
+       <class name="C:\\Users\\admin\\Automation_18-10-2024\\src\\test\\java\\testcase\\TestClass.java"/>
+        <class name="C:\\Users\\admin\\Automation_18-10-2024\\src\\test\\java\\testcase\\SampleTest.java"/>
+    </classes>
+     
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
