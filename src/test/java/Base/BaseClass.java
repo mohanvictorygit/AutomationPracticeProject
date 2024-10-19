@@ -26,7 +26,7 @@ public class BaseClass {
 	public void setup() throws IOException
 	{
 	try {
-	  fis=new FileInputStream("C:\\Users\\admin\\Automation_18-10-2024\\Application.properties");
+	  fis=new FileInputStream("C:\\Users\\admin\\eclipse-workspace\\AutomationPracticeProject\\Application.properties");
 	   prop.load(fis);	
 	    
 	    if(prop.getProperty("Browser").equalsIgnoreCase("chrome"))

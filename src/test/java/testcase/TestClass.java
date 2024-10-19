@@ -3,17 +3,22 @@ package testcase;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 import Base.BaseClass;
-import pageObject.Loginpage;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestClass extends BaseClass{
 	//WebDriver driver;
 	@Test
 	public void Login() 
 	{
+		
+		
 		//System.setProperty("webdriver.chrome.driver", "C:/Users/admin/Chromedriver/chromedriver.exe");
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--start-maximized"); // Start maximized
@@ -22,13 +27,9 @@ public class TestClass extends BaseClass{
 		//driver.get("https://www.saucedemo.com/v1/");
 		System.out.println("Entered the Login method");
 		driver.manage().window().maximize();
-		Loginpage.UserName("standard_user");
-		Loginpage.Password("secret_sauce");
-		Loginpage.Login();
-		
-		//driver.findElement(By.id("user-name")).sendKeys("standard_user");
-		//driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
-		//driver.findElement(By.xpath("//input[contains(@value,'LOGIN')]")).click();
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
+		driver.findElement(By.xpath("//input[contains(@value,'LOGIN')]")).click();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[@id='item_5_img_link']/img")).click();
 		driver.findElement(By.xpath("//*[contains(text(),'ADD TO CART')]")).click();
@@ -54,8 +55,27 @@ public class TestClass extends BaseClass{
 
 	
 	}
+	
+	@Test
+	public void Print1() 
+	{
+	  System.setProperty("webdriver.chrome.driver", "C:/Users/admin/Chromedriver/chromedriver.exe");
+	  WebDriver driver1=new ChromeDriver();
+	  driver1.get("https://www.google.com");
+	  
 
+    }
+	
+	@Test
+	public void Print2() 
+	{
+	  
+	  WebDriverManager.edgedriver().setup();
+  	  WebDriver driver2=new EdgeDriver();
+  	  driver2.get(prop.getProperty("https://www.gmail.com"));
+  } 
+}
 
     
-}
+	
 

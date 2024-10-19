@@ -27,6 +27,7 @@ public class Loginpage extends BaseClass{
 		return password;
 	}
 	
+
 	public static void Login()
 	{
 		driver.findElement(LoginBy).click();
