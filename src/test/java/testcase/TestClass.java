@@ -56,24 +56,7 @@ public class TestClass extends BaseClass{
 	
 	}
 	
-	@Test
-	public void Print1() 
-	{
-	  System.setProperty("webdriver.chrome.driver", "C:/Users/admin/Chromedriver/chromedriver.exe");
-	  WebDriver driver1=new ChromeDriver();
-	  driver1.get("https://www.google.com");
-	  
-
-    }
 	
-	@Test
-	public void Print2() 
-	{
-	  
-	  WebDriverManager.edgedriver().setup();
-  	  WebDriver driver2=new EdgeDriver();
-  	  driver2.get(prop.getProperty("https://www.gmail.com"));
-  } 
 }
 
     
