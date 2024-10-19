@@ -35,7 +35,10 @@ public class BaseClass {
 	    	driver=new ChromeDriver();
 	    	driver.get(prop.getProperty("ApplicationURL"));		
 	    }
-	    else if(prop.getProperty("Browser").equalsIgnoreCase("ie"))
+	  
+
+      /*
+else if(prop.getProperty("Browser").equalsIgnoreCase("ie"))
         {
         	WebDriverManager.iedriver().setup();
         	driver=new InternetExplorerDriver();
@@ -54,7 +57,8 @@ public class BaseClass {
         	driver.get(prop.getProperty("ApplicationURL"));
         } 
 	    
-	    
+	  
+*/  
 	    
 	} 
 	
