@@ -13,7 +13,6 @@ import pageObject.Loginpage;
 public class TestClass extends BaseClass{
 	//WebDriver driver;
 	
-	
 	@Test
 	public void AddtoCart() 
 	{
