@@ -50,10 +50,9 @@ public class TestClass extends BaseClass{
 	    }
 	    else
 	    {
-	    	System.out.println("Some issues in the Order");
+	    	System.out.println("Order is not completed due to some issues");
 	    }
-		
-
+	
 	
 	}
 
